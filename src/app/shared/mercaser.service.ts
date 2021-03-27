@@ -11,11 +11,13 @@ export class MercaserService {
 
   constructor(private http: HttpClient) { }
 
-  getAll(item: any): Observable<any> {
+  getAll(item: any, offset: number, limit: number): Observable<any> {
+    console.log(this.API + '/sites/MCO/search?q=' + item);
     return this.http.get(this.API + '/sites/MCO/search?q=' + item);
   }
   
   getSeller(id: any): Observable<any> {
     return this.http.get(this.API + '/users/' + id);
   }
+
 }
