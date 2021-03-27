@@ -1,6 +1,12 @@
 .form-field {
-    width: 200px;
+      display: flex;
+      justify-content: center;
   }
+
+ #boton {
+  display: flex;
+  justify-content: center;
+}
 
   .example-card {
     max-width: 200px;

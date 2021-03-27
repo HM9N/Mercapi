@@ -5,7 +5,7 @@
         <mat-icon>close</mat-icon>
     </button>
 </mat-form-field>
-<button mat-stroked-button color="primary" (click)="getAll(offset, limit)">Primary</button>
+<div id="boton"><button mat-stroked-button color="primary" (click)="getAll(offset, limit)">Buscar</button></div>
 
 <mat-grid-list cols="4" rowHeight="700" gutterSize="5px">
     <mat-grid-tile *ngFor="let item of items | paginate: {itemsPerPage: 50, currentPage: pageActual, totalItems: total}; let i = index">
